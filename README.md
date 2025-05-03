@@ -41,7 +41,7 @@ XML
 </LinearLayout>
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 JAVA
-package com.example.app5;
+package com.example.lf_app5;
 
 import android.os.Bundle;
 import android.content.Context;
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Buscar por nombre
+    
         if (!nombreBuscado.isEmpty()) {
             String telefono = preferences.getString(nombreBuscado, null);
             if (telefono != null) {
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Buscar por teléfono
+ 
         if (!telefonoBuscado.isEmpty()) {
             for (String clave : preferences.getAll().keySet()) {
                 String telefono = preferences.getString(clave, null);
